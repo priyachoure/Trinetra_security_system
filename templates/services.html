@@ -1,0 +1,195 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+    .aboutus{
+        width:100%;
+        height:500px;
+    }
+    .title_whowe{
+        text-transform:capitalize;
+        text-align:left;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+        color:white;
+    }
+    .whoweare{
+        background-color:black;
+    }
+    .info_whowe{
+        color:white;
+        font-size:20px;
+        padding:20px;
+    }
+    .imag{
+        width:500px;
+        height:500px;
+    }
+        .service_title{
+            color:#3119b5;
+            font-size:40px;
+            padding-top:40px;
+            padding-bottom:20px;
+        }
+    .maintance{
+        padding:80px;
+    }
+    .info_sericeve{
+        font-size:17px;
+        padding:20px;
+    }
+    .service_title{
+        text-transform:capitalize;
+    }
+</style>
+
+
+<section class="about_Us">
+    <div>
+        <img src="{% static 'images/service_header.jpg' %}" class="aboutus">
+    </div>
+</section>
+
+<section class="whoweare">
+    <div class="container ">
+        <div class="title_whowe">Maintenance </div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_whowe">
+                <b>Annual Maintenance Contract (AMC) </b> for CCTV
+                    Safety & Security Systems is tailored to optimally maintain the systems up & running
+                    with minimal downtime.
+                    provide perticular
+            </div>
+<!--             <div class="col-lg-5 col-md-2 col-sm-1">-->
+<!--                <img src="{% static 'images/service_maintance.jpeg' %}" class="imag">-->
+<!--            </div>-->
+        </div>
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<section class="maintance">
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">Online Ticketing Support</div>
+             With our Online Ticketing Management System, AMC customers can now log a support request via our
+                AMC Service Center where tracking of information is easier.
+<br>
+<br>
+                <ul>
+                   <li> Customer Can track the Tickets and Resolution Timelines.</li>
+                   <li> Statistics shall also be provided every year on the no of cases.</li>
+                   <li> Can be supported with Audit Reports.</li>
+                   <li> KPI's like FTR% and SLA adherence are given importance.</li>
+                   <li> All tickets are serviced by skilled and trained engineers.</li>
+
+                </ul>
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/online_ticketing.jpg' %}" class="imag">
+             </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/expert-web-developer.jpg' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Expert web developer</div>
+             Expert web developers provide services to customers in a professional and effective manner by
+                following a structured process.
+<br><br>
+                <ul>
+                   <li> The developer provides training to the customer's team on how to use
+                       and manage the website or web application effectively.</li>
+                   <li> Additionally, ongoing support and maintenance services are offered to
+                       address any post-launch issues or updates</li>
+                   <li> Scalability features ensure that the application can handle increased workload by
+                       adding resources dynamically</li>
+                   <li> Enterprise applications deal with sensitive data and require robust security measures.
+                       Features like role-based access control, encryption, secure authentication, and data protection
+                       are essential.</li>
+                   <li> Clients are serviced by skilled and trained engineers.</li>
+
+                </ul>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">Preventive Maintenance</div>
+             Preventive maintenance is essential for any system. It becomes even more important when they
+                are security systems. We offer preventive maintenance as a part of our AMC Packages.
+                Benefits of Preventive maintenance,<br><br>
+
+                <ul>
+                   <li> Detects issues and critical problems in advance.</li>
+                   <li> Get advisory on replacement of spares or upgradation.</li>
+                   <li> Reports are provided for any audit trails.</li>
+                   <li> Improves overall system availability.</li>
+
+
+                </ul>
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/service_maintance.jpeg' %}" class="imag">
+             </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/online_ticketing.jpg' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Expert Service Engineers</div>
+                    Service engineers at Bion are well qualified and trained. They undergo planned training and
+                    development to ensure their skills are up to date all the time. They are supported by
+                            <br><br>
+                <ul>
+                   <li> SOPS - Structured operating procedure, ensures standard way of addressing issues.</li>
+                   <li> Each support ticket is monitored for FTR% and TAT%.</li>
+                   <li> Periodic skill matrix assessment helps to identify gaps.</li>
+                   <li> Standard checklists, Visit reports ensure systematic resolution to support tickets.</li>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<!--our aos-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+    {
+        offset:300,
+        duration:1500,
+    }
+    );
+  </script>
+
+
+
+{% endblock maincontent %}

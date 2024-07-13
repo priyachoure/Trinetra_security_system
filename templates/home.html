@@ -1,0 +1,710 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block maincontent %}
+<style>
+    .btn{
+        background-image:linear-gradient(to bottom right,rgb(253, 113, 78),rgb(39, 27, 206));
+    }
+    .card{
+    transition: all 0.3s;
+    }
+    .card:hover{
+        transform: scale(1.15);
+    }
+    .why_trinetra{
+        background:rgb(240, 240, 240);
+        padding:60px;
+
+    }
+    .title{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .container_our_solution {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr)); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between grid items */
+    background-color:black;
+    padding:20px;
+    }
+
+    .items{
+        background-color:black;
+<!--        border:1px solid white;-->
+        color:white;
+    }
+
+    #item0{
+        grid-row-start:1;
+        grid-row-end:10;
+        color:white;
+        font-size:60px;
+        align-self:center;
+        padding:30px;
+        border:none;
+        font-weight:50
+        position:relative;
+    }
+    .card1{
+    width:320px;
+    height:500px;
+    border-radius:20px;
+    overflow: hidden;
+    border:3px solid #fff;
+    position: relative;
+
+}
+.card1-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 15px;
+}
+.card-bodyy{
+    width:100%;
+    height:100%;
+    top:0;
+    right:-105%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(50px);
+    color:white;
+    border-radius: 15px;
+    /* padding:15px; */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    transition:2s;
+}
+
+.card1:hover .card-bodyy{
+    right: 0;
+}
+
+
+.card1-info{
+    font-size: 18px;
+    line-height: 25px;
+    margin:40px 0;
+    font-weight: 400;
+    cursor:pointer;
+    padding:10px;
+    text-decoration: none;
+    color:white;
+}
+.card1-info:hover{
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.card-btnn{
+
+    color:white;
+    background: #8fabba;
+    padding:10px 20px;
+    border-radius:5px;
+    text-transform:capitalize;
+    border:none;
+    outline:none;
+    font-weight:500;
+    cursor:pointer;
+    width:120px;
+    margin:100px;
+    border:1px solid white;
+}
+
+#item1{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item2{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item3{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item4{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item5{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item6{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item7{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item8{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item9{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item10{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item11{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+#item12{
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    padding:20px;
+}
+
+<!--client-->
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+.logos{
+    overflow: hidden;
+    padding:60px 0px;
+    background: white;
+    white-space: nowrap;
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: 8s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 100px;
+    margin:0 40px;
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+
+}
+
+<!--counter-->
+.counting{
+
+<!--    padding:0;-->
+<!--    margin:0;-->
+
+    box-sizing:border-box;
+    font-family: Poppins;
+    background-color:#121317 ;
+
+}
+
+.wrapper{
+    /* border:1px solid white; */
+    position:relative;
+    width:80vw;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    display:flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top:200px ;
+}
+.container_count{
+    width:28vmin;
+    height:28vmin;
+    /* border:1px solid white; */
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding:1em 0;
+    position:relative;
+    font-size:16px;
+    border-radius:0.5em;
+    background-color:#21242b;
+    border-bottom:10px solid #ed7e9f;
+}
+i{
+    color:#ed7e9f;
+    font-size:2.5em;
+    text-align:center;
+}
+span.num{
+    color:#ffffff;
+    display:grid;
+    place-items: center;
+    font-weight: 600;
+    font-size:3em;
+}
+span.text{
+    color:#e0e0e0;
+    font-size: 1.2em;
+    text-align:center;
+    pad:0.7em 0;
+    font-weight: 400;
+    line-height:0;
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper{
+        width:85vw;
+    }
+    .container_count{
+        height:26vmin;
+        width:26vmin;
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .wrapper{
+        width:90vw;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+    .container_count{
+        width:calc(50% -40px);
+        height:30vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .wrapper{
+        gap:15px;
+    }
+    .container_count{
+        width:100%;
+        height:25vmin;
+        font-size: 8px;
+    }
+}
+
+</style>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/webdevelopment.jpg' %}" class="d-block w-100 " alt="webdevelopment">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/Video-door.jpg' %}" class="d-block w-100 " alt="Video-door">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/webdesign.jpg' %}" class="d-block w-100 " alt="webdesign">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/Biometric-Access-Control.png' %}" class="d-block w-100 "
+                 alt="Biometric-Access-Control">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/cctvimg.jpg' %}" class="d-block w-100 " alt="cctv.jpeg">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/tech1.jpg' %}" class="d-block w-100 " alt="datacenter">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/Fire-Alarms.jpg' %}" class="d-block w-100 " alt="Fire-Alarms">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/cctv_AMC.jpg' %}" class="d-block w-100" alt="cctv_AMC">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/ACCESS-CONTROL.jpg' %}" class="d-block w-100 " alt="ACCESS-CONTROL.jpg">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container welcome_trinetra" style="padding:15px;">
+    <div class="trinetra_image" style=" float:left; padding:20px;">
+        <a href="{% url 'about' %}"> <img src="{% static 'images/trinetra-logo.jpeg' %}" class="trinetralogo"> </a>
+
+    </div>
+    <div class="trinetra_info" style="padding:20px;">
+
+        <h1><b>Welcome</b> to Trinetra Security System
+            We have the right solution</h1>
+
+        <p>Trinetra Security System is one of the Online Business Solution company in India, where any Large, Medium, or
+            Small business houses as also Entrepreneurs get Website Designing, Software & App Development,CCTV
+            Installation, & Services
+            , Fire Alarm System,, Biometric Attendance , CCTV AMC, Video Door Phone, Social Media Marketing,
+            SEO, and Branding. Trinetra System is a one-stop online presence creation company.</p>
+        <!--    We are a team of Professionals-->
+        <!--  and Associates like Web Designers, Software & App Developers, SEO & Social Media Marketing Experts with vast-->
+        <!--  knowledge and experience, committed to providing consistent, customized, and workable solutions.</p>-->
+        <br>
+        <a href="{% url 'about' %}" class="btn btn-info"><b>Read More..</b> </a>
+    </div>
+
+</div>
+
+
+<section class="why_trinetra">
+    <div class="container">
+        <div class="title text-center pb-5 ">
+            <h1> Why Trinetra Security System ?</h1>
+        </div>
+        <br><br>
+        <div>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="{% static 'images/System integration.jpg' %}" class="card-img-top"
+                         alt="System Integration"
+                         style="height:170px;">
+                    <div class="card-body">
+                        <h3 class="card-title" style=" text-align: center; "><b>System Integration</b></h3>
+                        <p class="card-text" style="color:gray;font-size:18px;text-align:center;">Trinetra Security
+                            System offers seamless
+                            Integration of physical security systems on a unified platform</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/service.jpg' %}" class="card-img-top" alt="Service"
+                         style="height:170px;">
+                    <div class="card-body">
+                        <h3 class="card-title" style=" text-align: center;"><b>Service & Maintenance</b></h3>
+                        <p class="card-text" style="color:gray;font-size:18px;text-align:center;">The ongoing activities
+                            and processes involved in managing, updating,
+                            and supporting software applications . </p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/customised-solution1.jpg' %}" class="card-img-top"
+                         alt="Cstomised solution"
+                         style="height:170px;">
+                    <div class="card-body">
+                        <h3 class="card-title" style=" text-align: center;"><b>Customized Solutions</b></h3>
+                        <p class="card-text" style="color:gray;font-size:18px;text-align:center;">Every business has
+                            unique needs and
+                            requirements,
+                            which is why our solutions are custom-designed to meet those specific needs.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/customise_solution.jpg' %}" class="card-img-top" alt="Innovaton"
+                    style="height:170px;">
+                    <div class="card-body">
+                        <h3 class="card-title" style=" text-align: center;"><b>Innovations & Trends</b></h3>
+                        <p class="card-text" style="color:gray;font-size:18px;text-align:center;">As a solution
+                            provider in the industry, maintains an updated knowledge base on industry innovations and
+                            trends.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+<section class="our_solutions">
+    <div class="container">
+        <div class="container_our_solution">
+        <div class="items" id="item0">Our Solutions</div>
+         <div>
+        <div class="items" id="item1">Enterprise Access Control System</div>
+            <div class="card1">
+                <img src="{% static 'images/enterprises_access_control System.jpeg' %}" class="card1-img" alt="Access Control System">
+                <div class="card-bodyy">
+<!--                    <h1 class="card-title">NYC</h1>-->
+<!--                    <p class="card-sub-title">new your city</p>-->
+                        <a href="{% url 'access_control' %}">
+                        <p class="card1-info"> Trinetra Security System offers an Access Control System that is secure, flexible, scalable,
+                        and designed to meet your specific needs in terms of design, application, accessibility,
+                        auditability, and budget.</p>
+                        </a>
+                    <a href="{% url 'access_control' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+         </div>
+
+        <div>
+            <div class="items" id="item2">Enterprise Video Surviellance Solution</div>
+            <div class="card1">
+                <img src="{% static 'images/video-surveillance-system-services.png' %}" class="card1-img" alt="Video Surviellance">
+                <div class="card-bodyy">
+                    <a href="{% url 'video_servillance' %}">
+                        <p class="card1-info"> Trinetra Security System focuses on IP technology and offers IP Cameras
+                            designed
+                            for highly demanding surveillance environments. Whether you need cameras that are suitable
+                            for...</p>
+                    </a>
+<!--                        outdoor use with environmental ratings or compact cameras for indoor locations, we ensures-->
+<!--                        reliable surveillance solutions for all situations.</p>-->
+                    <a href="{% url 'video_servillance' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item3">Enterprise Data center solution</div>
+            <div class="card1">
+                <img src="{% static 'images/enterprise data sebter.jpg' %}" class="card1-img" alt="Data center ">
+                <div class="card-bodyy">
+                    <a href="{% url 'Data_center' %}">
+                    <p class="card1-info">safeguard your vital data center assets against risks such as fire, rodents,
+                        water damage, and more..</p>
+                    </a>
+                    <a href="{% url 'Data_center' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item4">Enterprise Fire alarm & Detection Systems</div>
+            <div class="card1">
+                <img src="{% static 'images/Enterprise Fire alarm.jpg' %}" class="card1-img" alt="Enterprise Fire alarm">
+                <div class="card-bodyy">
+                     <a href="{% url 'fire_alaram_detection' %}">
+                    <p class="card1-info">we offer a comprehensive selection of advanced fire alarm systems, detectors,
+                        signaling devices, accessories, and service tools to meet all your fire safety needs.</p></a>
+                    <a href="{% url 'fire_alaram_detection' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item5">Integrated Security Solutions</div>
+            <div class="card1">
+                <img src="{% static 'images/inegrated.jpeg' %}" class="card1-img" alt="Integrated Security Solutions">
+                <div class="card-bodyy">
+                     <a href="{% url 'integrated_security' %}">
+                    <p class="card1-info">we deliver distinctive enterprise security solutions that are fully
+                        tailored and innovative to meet your specific requirements.</p></a>
+                    <a href="{% url 'integrated_security' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item6">Visitor Management System</div>
+            <div class="card1">
+                <img src="{% static 'images/visitor_management.jpg' %}" class="card1-img" alt="Visitor Management System">
+                <div class="card-bodyy">
+                    <a href="{% url 'visitor_management' %}">
+                        <p class="card1-info">efficiently handle visitors to your facility using a self-managed system.</p></a>
+                    <a href="{% url 'visitor_management' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item7">Barier Based Solution</div>
+            <div class="card1">
+                <img src="{% static 'images/barrier-gate.jpg' %}" class="card1-img" alt="Barier Based Solution">
+
+                <div class="card-bodyy">
+                    <a href="{% url 'barier_based' %}">
+                    <p class="card1-info">regulate the influx of individuals into your facility with secure and
+                        controlled access management.</p></a>
+                    <a href="{% url 'barier_based' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item8">Instruction and touchless Access solution</div>
+            <div class="card1">
+                <img src="{% static 'images/facial-recognition.jpg' %}" class="card1-img" alt="Instruction and touchless Access">
+                <div class="card-bodyy">
+                    <a href="{% url 'touchless_access' %}">
+                    <p class="card1-info">secure your premises in real-time using AI-driven solutions that provide
+                        continuous monitoring and trigger alerts for specific events.</p></a>
+                    <a href="{% url 'touchless_access' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item9">Enterprise Web Development</div>
+            <div class="card1">
+                <img src="{% static 'images/enterprise_Web_Deve.jpg' %}" class="card1-img" alt="Web Development">
+                <div class="card-bodyy">
+                    <a href="{% url 'Web_development' %}">
+                    <p class="card1-info">We provides web development features encompass a wide range of functionalities
+                        and capabilities tailored to meet the complex needs of large organizations.</p></a>
+                        <a href="{% url 'Web_development' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item10">Enterprise Digital Marketing</div>
+            <div class="card1">
+                <img src="{% static 'images/digital marketing.jpg' %}" class="card1-img" alt="Digital Marketing">
+                <div class="card-bodyy">
+                    <a href="{% url 'digital_marketing' %}">
+                    <p class="card1-info">We offer digital marketing refers to the strategic use of digital channels,
+                        technologies, and techniques by large organizations to promote their products or services, engage
+                        with customers, and ...</p></a>
+<!--                        achieve marketing objectives.-->
+<!--                        It encompasses a wide range of activities aimed at reaching and influencing-->
+<!--                        target audiences in the digital realm</p>-->
+                        <a href="{% url 'digital_marketing' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item11">Enterprise Web Designing</div>
+            <div class="card1">
+                <img src="{% static 'images/web-design-technology.jpg' %}" class="card1-img" alt="Web Designing">
+                <div class="card-bodyy">
+                    <a href="{% url 'web_designing' %}">
+                    <p class="card1-info">We provide Enterprise web designing involves creating and designing websites
+                        that cater to the specific needs and requirements of large organizations.</p></a>
+                        <a href="{% url 'web_designing' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="items" id="item12">Enterprise App Development</div>
+            <div class="card1">
+                <img src="{% static 'images/Enterprise_aapp fevelo,memy.jpg' %}" class="card1-img" alt="Enterprise App Development">
+                <div class="card-bodyy">
+                    <a href="{% url 'App_development' %}">
+                    <p class="card1-info">we offers Enterprise app development involves the creation of software
+                        applications specifically designed to address the needs and challenges of large
+                        organizations.</p></a>
+                    <a href="{% url 'App_development' %}"><button class="card-btnn">Read More..</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+<br>
+
+<section class="client" style="background-color:#f9f9f9;padding:20px;">
+    <div class="container-fluid">
+        <div class="our_client_title text-center p-5">
+            <h1>Our Clients</h1>
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="{% static 'images/capgemini.png' %}">
+                <img src="{% static 'images/kpmg.jpeg' %}">
+
+                <img src="{% static 'images/ltmindtree.png' %}">
+                 <img src="{% static 'images/Western-Union-New-Logo.png' %}">
+                <img src="{% static 'images/flower.jpeg' %}">
+                <img src="{% static 'images/krishna.jpeg' %}">
+
+
+            </div>
+            <!-- sameimages double -->
+            <div class="logos-slide">
+                <img src="{% static 'images/capgemini.png' %}">
+                <img src="{% static 'images/kpmg.jpeg' %}">
+
+                <img src="{% static 'images/ltmindtree.png' %}">
+                 <img src="{% static 'images/Western-Union-New-Logo.png' %}">
+                <img src="{% static 'images/flower.jpeg' %}">
+                <img src="{% static 'images/krishna.jpeg' %}">
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="count"style="background-color:black;">
+    <div class="counting">
+        <div class="wrapper">
+            <div class="container_count">
+                <i class="fa-solid fa-circle-check"></i>
+                <span class="num" data-val="2500">000 +</span>
+                <span class="text">Project Completed</span>
+            </div>
+
+            <div class="container_count">
+                <i class="fa-solid fa-user-group"></i>
+                <span class="num" data-val="500">000 +</span>
+                <span class="text">Work Force</span>
+            </div>
+
+            <div class="container_count">
+                <i class="fa-solid fa-face-smile"></i>
+                <span class="num" data-val="2400">000</span>
+                <span class="text">Happy clients</span>
+            </div>
+
+            <div class="container_count">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="num" data-val="1000">000 +</span>
+                <span class="text">Sites & Services</span>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+
+    <script>
+        let valueDisplays=document.querySelectorAll(".num");
+let interval =5000;
+
+// console.log(valueDisplay);
+
+valueDisplays.forEach((valueDisplay) => {
+    let startValue=0;
+    let endValue=parseInt(valueDisplay.getAttribute("data-val"));
+    let duration=Math.floor(interval/endValue);
+    let counter=setInterval(function(){
+        startValue += 1;
+        valueDisplay.textContent=startValue;
+        if(startValue==endValue){
+            clearInterval(counter);
+        }
+    },duration);
+});
+    </script>
+
+</section>
+
+<br>
+
+{% endblock maincontent %}

@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+    .aboutus{
+        width:100%;
+        height:500px;
+    }
+    .title_whowe{
+        text-transform:capitalize;
+        text-align:center;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+        color:white;
+    }
+    .whoweare{
+        background-color:black;
+    }
+    .info_whowe{
+        color:white;
+        font-size:20px;
+        padding:20px;
+    }
+    .imag{
+        width:500px;
+        height:500px;
+    }
+        .service_title{
+            color:#3119b5;
+            font-size:40px;
+            padding-top:40px;
+            padding-bottom:20px;
+        }
+    .maintance{
+        padding:80px;
+    }
+    .info_sericeve{
+        font-size:17px;
+        padding:20px;
+    }
+    .service_title{
+        text-transform:capitalize;
+    }
+</style>
+
+
+<section class="about_Us">
+    <div>
+        <img src="{% static 'images/appdeveloment1.jpg' %}" class="aboutus">
+    </div>
+</section>
+
+<section class="whoweare">
+    <div class="container ">
+        <div class="title_whowe">Enterprise App Development</div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_whowe">
+
+           Enterprise app development refers to the process of designing, developing, and deploying software
+                applications specifically tailored for large-scale organizations or businesses. These applications
+                are typically used to streamline internal processes, enhance productivity, improve communication,
+                manage data, and support business operations.
+
+
+<!--             We carry out a detailed site survey and design a system as per National Fire Codes and Standards. Our Fire Alarm-->
+<!--                Systems are-->
+<!--                equipped with advanced design parameters such as interfacing with other systems and future scalability needs.-->
+                <br><br>
+<!--                    <ul>-->
+<!--                           <li> Integration with other security systems</li>-->
+<!--                           <li> Movement Control-Prevents Tailgating.Allows one person at a time.</li>-->
+<!--&lt;!&ndash;                           <li> GDPR Compliance - Products used in the integration comply with GDPR compliance.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                           <li> Scalability - Upgrade more systems/ devices to existing unified platform at any given point in time</li>&ndash;&gt;-->
+<!--                    </ul>-->
+
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1">
+                <img src="{% static 'images/app2.jpg' %}" class="imag">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<section class="maintance">
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">Business Requirements</div>
+                Understand the specific business requirements, objectives, and challenges
+                that the enterprise app aims to address. Conduct thorough requirement gathering
+                sessions with stakeholders to define functionality, features, and desired outcomes.
+<!--            Any of the products available in the Industry are Scalable, Networkable, can be centrally monitored,-->
+<!--                and now IoT Driven as well.-->
+<br>
+<br>
+<!--                <ul>-->
+<!--                   <li>Active IR</li>-->
+<!--                   <li> Break Wire</li>-->
+<!--                   <li> Electrostatic Field</li>-->
+<!--                   <li> Fence Detection</li>-->
+<!--                   <li> Ground Motion</li>-->
+<!--                    <li> Magnetic</li>-->
+<!--                   <li>Microwave Detectors</li>-->
+
+<!--                </ul>-->
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/app3.jpeg' %}" class="imag">
+             </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/Mobile-App-Development-Platform.jpg' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Platform Selection</div>
+                     Choose the appropriate platform(s) for app development based on factors
+                such as target audience (employees, customers, partners), devices (mobile, desktop, tablets),
+                operating systems (iOS, Android, Windows), and integration requirements
+<!--                <ul>-->
+<!--                   <li> Short pulse of high voltage is passed through the fence on regular intervals or when-->
+<!--                       someone tries to pass over the fence.</li>-->
+<!--                   <li>When the intruder touches the fence,he/she/any animal immediately retracts and avoids.</li>-->
+<!--                   <li> Detect & deter unauthorized entries.</li>-->
+<!--&lt;!&ndash;                   <li> Streamlines the entry process.</li><br>&ndash;&gt;-->
+<!--&lt;!&ndash;                    Some of the popular barriers are:&ndash;&gt;-->
+
+<!--&lt;!&ndash;                   <br><br><li> Flap Barrier</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li> TP Type Swing Gate</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Tripods</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Boom Barrier&ndash;&gt;-->
+<!--</li>-->
+
+<!--                </ul>-->
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">User Experience (UX) Design</div>
+              Focus on designing a user-friendly and intuitive interface for the enterprise app.
+                Conduct user research, create wireframes, prototypes, and mockups to ensure a
+                seamless and engaging user experience. Incorporate feedback from stakeholders and
+                end-users during the design phase.
+
+<!--                <ul>-->
+<!--                   <li> Ensure fire doors are closed.</li>-->
+<!--                   <li> Prevents the slamming of doors</li>-->
+<!--                   <li> Controls the open swing of doors</li>-->
+<!--                   <li> Adds security through door closer</li>-->
+
+
+<!--                </ul>-->
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/ux design.jpg' %}" class="imag">
+             </div>
+        </div>
+        <br><br>
+
+<!--        <div class="row">-->
+
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">-->
+<!--                <img src="{% static 'images/email marketing.jpeg' %}" class="imag">-->
+<!--             </div>-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">-->
+<!--                <div class="service_title" data-aos="fade-up">Email Marketing</div>-->
+<!--                    Email remains a powerful tool for enterprise marketing. It involves sending targeted messages,-->
+<!--                newsletters, promotions, and updates to a subscriber list. Email marketing is effective for lead-->
+<!--                nurturing, customer retention, and driving conversions.-->
+<!--                            <br><br>-->
+<!--&lt;!&ndash;                <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Available for various door thicknesses. Several models and varieties to choose from.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Wired and Wireless models.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Tracks data on entry, exit or failed attempts.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Locks can be integrated with other physical security systems.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li> Keyless entry, some examples could be keypad and codes, electronic cards including&ndash;&gt;-->
+<!--&lt;!&ndash;                        magstripe, proximity and smart cards, and biometrics including fingerprint, facial&ndash;&gt;-->
+<!--&lt;!&ndash;                        characteristics, and retina scans.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Mechanical override, in case of electronic failure in the lock</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Gives you higher control like time and date range specific, can be controlled remotely.</li>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--         <div class="row">-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">-->
+<!--                <div class="service_title" data-aos="fade-up">Paid Advertising</div>-->
+<!--                Enterprises invest in paid advertising campaigns across platforms like Google Ads, social media ads,-->
+<!--                display ads, and video ads. Paid advertising helps in reaching specific audiences, increasing brand-->
+<!--                visibility, and driving immediate results.-->
+<!--<br>-->
+<!--&lt;!&ndash;                <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li>Multi Face Tracking</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Reduce need of Credentials.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Embedded Anti Spoofing.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> GDPR Compliant.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> 2D and 3D checks for face recognitiony.</li>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--            </div>-->
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">-->
+<!--                <img src="{% static 'images/paid_advertising.png' %}" class="imag">-->
+<!--             </div>-->
+<!--        </div>-->
+
+<!--        <br><br>-->
+<!--        <div class="row">-->
+
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">-->
+<!--                <img src="{% static 'images/timebaesd.jpg' %}" class="imag">-->
+<!--             </div>-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">-->
+<!--                <div class="service_title" data-aos="fade-up">Time And Attendance Monitoring</div>-->
+<!--             Keeping a track of employee's attendance is vital to the efficiency of the business. Time-->
+<!--                & Attendance software efficiently sets the time management discipline, report and record-->
+<!--                keeping for enterprises.-->
+<!--            <br>-->
+
+<!--            Reports that can be generated with T & A Management Software are:-->
+<!--<br><br>-->
+<!--                <ul>-->
+<!--                   <li> Attendance details</li>-->
+<!--                   <li> Man hours / overtime</li>-->
+<!--                   <li> Overtime summary</li>-->
+<!--                   <li> Attendance muster</li>-->
+<!--                   <li> Out duty details</li>-->
+<!--                    <li> Attendance regularization report</li>-->
+
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">-->
+<!--                <div class="service_title" data-aos="fade-up">Integration With HRMS Systems</div>-->
+<!--&lt;!&ndash;             Managed from a central location with zero down time and the system can scale with the needs of the&ndash;&gt;-->
+<!--&lt;!&ndash;                organization.<br><br>&ndash;&gt;-->
+
+<!--                <ul>-->
+<!--                   <li> Bion provides integration with a HRMS system by using API, .CSV / .XLS or at DB Level.</li>-->
+<!--                   <li> Importing Employee details Name, ID, etc, fields sync from HRMS to Software.</li>-->
+<!--                   <li> Activation & Deactivation of employees sync is maintained.</li>-->
+<!--                   <li> Consolidated attendance summary attendance, leave & tour details is available-->
+<!--                       to employees on one dashboard.</li>-->
+<!--                    <li> Final attendance summary is sent to ERP / HRMS systems for payroll processing.</li>-->
+
+
+<!--                </ul>-->
+<!--            </div>-->
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">-->
+<!--                <img src="{% static 'images/aaa.jpeg' %}" class="imag">-->
+<!--             </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--        <div class="row">-->
+
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">-->
+<!--                <img src="{% static 'images/digital-transformaton.jpg' %}" class="imag">-->
+<!--             </div>-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">-->
+<!--                <div class="service_title" data-aos="fade-up">Failover Or Redundancy Access Control Servers</div>-->
+<!--                    Effective security and access control systems require uninterrupted operation. When physical-->
+<!--                access control systems stop working, the entire operation is at risk. High availability solutions-->
+<!--                are necessary to ensure these essential systems remain operational and provide uninterrupted coverage.-->
+<!--                Bion offers high availability solutions that maintain high availability of physical access control-->
+<!--                systems with a comprehensive redundancy or fail over access control servers.-->
+<!--                            <br><br>-->
+<!--&lt;!&ndash;                <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> SOPS - Structured operating procedure, ensures standard way of addressing issues.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Each support ticket is monitored for FTR% and TAT%.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Periodic skill matrix assessment helps to identify gaps.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Standard checklists, Visit reports ensure systematic resolution to support tickets.</li>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+
+
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<!--our aos-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+    {
+        offset:300,
+        duration:1500,
+    }
+    );
+  </script>
+
+
+
+{% endblock maincontent %}

@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+
+<style>
+    .aboutus{
+        width:100%;
+    }
+    .title_whowe{
+        text-transform:capitalize;
+        text-align:center;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+        color:white;
+    }
+    .whoweare{
+        background-color:black;
+    }
+    .info_whowe{
+        color:white;
+        font-size:20px;
+        padding:20px;
+    }
+    .our_team{
+        background-color:gray;
+    }
+    .employye-body{
+        background-color:gray;
+    }
+    .card-img-top{
+        background-color:gray;
+        border-radius:50%;
+        height:250px;
+        width:250px;
+        object-fit:cover;
+    }
+    .meetourexperts{
+        text-transform:capitalize;
+        text-align center;
+        padding:30px;
+        text-transform:capitalize;
+        text-align:center;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+        color:white;
+    }
+    .employeename{
+        color:white;
+        text-transform:capitalize;
+        text-align:center;
+        font-size:20px;
+        font-weight:bold;
+        padding:20px 0 0 0;
+
+    }
+    .employee_post{
+        color:black;
+        text-transform:uppercase;
+        text-align:center;
+        font-size:15px;
+        font-weight:bold;
+
+    }
+    .team_body{
+        display:grid;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        padding:20px;
+
+    }
+    .card{
+    background-color:gray;
+        width:25rem;
+        border:none;
+    }
+
+</style>
+
+
+<section class="about_Us">
+    <div>
+        <img src="{% static 'images/Aboutus_backgound-1.jpg' %}" class="aboutus">
+    </div>
+</section>
+
+<section class="whoweare">
+
+    <div class="title_whowe">Who we are </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_whowe">
+                <b>Trinetra Security System</b> is one of the Online Business Solution company in India, where any Large,
+                Medium, or
+            Small business houses as also Entrepreneurs get Website Designing, Software & App Development,CCTV
+            Installation, & Services
+            , Fire Alarm System, Biometric Attendance , CCTV AMC, Video Door Phone, Social Media Marketing,
+            SEO, and Branding. Trinetra System is a one-stop online presence creation company.
+            We are a team of Professionals, SEO & Social Media Marketing Experts with vast
+          knowledge and experience, committed to providing consistent, customized, and workable solutions.
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1">
+                <img src="{% static 'images/Career-progression.jpg' %}">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<section class="our_team">
+    <div class="container ">
+        <div class="meetourexperts">
+            meet our Experts
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-4 col-md-2 col-sm-1 team_body">
+                <div class="card">
+                      <img src="{% static 'images/digital marketing.jpg'%}" class="card-img-top" alt="Employee">
+                      <div class="employye-body">
+                            <h5 class="employeename">XYZ</h5>
+                            <p class="employee_post">FOUNDER & CEO</p>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-sm-1 team_body">
+                <div class="card">
+                      <img src="{% static 'images/facial-recognition.jpg'%}" class="card-img-top" alt="Employee">
+                      <div class="employye-body">
+                            <h5 class="employeename">POR</h5>
+                            <p class="employee_post">CHIEF TECHNOLOGY OFFICER</p>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-sm-1 team_body">
+                <div class="card">
+                      <img src="{% static 'images/employye_cartoon.png'%}" class="card-img-top" alt="Employee">
+                      <div class="employye-body">
+                            <h5 class="employeename">aaa</h5>
+                            <p class="employee_post">DIGITAL MARKETING EXPERT</p>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-2 col-sm-1 team_body">
+                <div class="card">
+                      <img src="{% static 'images/cctv_AMC.jpg'%}" class="card-img-top" alt="Employee">
+                      <div class="employye-body">
+                            <h5 class="employeename">PPP</h5>
+                            <p class="employee_post">SALES & MARKETING HEAD</p>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-sm-1 team_body">
+                <div class="card">
+                      <img src="{% static 'images/Biometric-Access-Control.png'%}" class="card-img-top" alt="Employee">
+                      <div class="employye-body">
+                            <h5 class="employeename">eee</h5>
+                            <p class="employee_post">HR & FINANCE INCHARGE</p>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-sm-1 team_body">
+                <div class="card">
+                      <img src="{% static 'images/cctv.jpeg'%}" class="card-img-top" alt="Employee">
+                      <div class="employye-body">
+                            <h5 class="employeename">SSS</h5>
+                            <p class="employee_post">Web Developer</p>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+</section>
+
+
+
+{% endblock maincontent %}

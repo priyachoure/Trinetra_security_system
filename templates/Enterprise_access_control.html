@@ -1,0 +1,299 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+    .aboutus{
+        width:100%;
+        height:500px;
+    }
+    .title_whowe{
+        text-transform:capitalize;
+        text-align:center;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+        color:white;
+    }
+    .whoweare{
+        background-color:black;
+    }
+    .info_whowe{
+        color:white;
+        font-size:20px;
+        padding:20px;
+    }
+    .imag{
+        width:500px;
+        height:500px;
+    }
+        .service_title{
+            color:#3119b5;
+            font-size:40px;
+            padding-top:40px;
+            padding-bottom:20px;
+        }
+    .maintance{
+        padding:80px;
+    }
+    .info_sericeve{
+        font-size:17px;
+        padding:20px;
+    }
+    .service_title{
+        text-transform:capitalize;
+    }
+</style>
+
+
+<section class="about_Us">
+    <div>
+        <img src="{% static 'images/acces1.jpg' %}" class="aboutus">
+    </div>
+</section>
+
+<section class="whoweare">
+    <div class="container ">
+        <div class="title_whowe">Enterprise Access Control Systems </div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_whowe">
+                <b>Trinetra Security System </b> for Fire
+
+                     addresses the following concerns in Access Control Systems:
+                <br><br>
+                    <ul>
+                           <li> Integration with legacy systems</li>
+                           <li> Protection against increasing vulnerabilities</li>
+                           <li> User convenience and throughput at entrances</li>
+                           <li> Making physical access processes simpler with digital administration</li>
+                    </ul>
+
+            </div>
+<!--             <div class="col-lg-5 col-md-2 col-sm-1">-->
+<!--                <img src="{% static 'images/service_maintance.jpeg' %}" class="imag">-->
+<!--            </div>-->
+        </div>
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<section class="maintance">
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">Enterprise Access Control Systems</div>
+<br>
+<br>
+                <ul>
+                   <li> Large transaction storage capacity.</li>
+                   <li> Slave Server – Master Server architecture supports worldwide expansion and scalability.</li>
+                   <li> Data Encryption-TLS 1.2 & OSDP-AES 128.</li>
+                   <li> System redundancy and failover mechanism.</li>
+                   <li> System scalability.</li>
+
+                </ul>
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/access.jpeg' %}" class="imag">
+             </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/mobileaccess.png' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Mobile Access Control</div>
+             Secure data encryption and it cannot be cloned easily.
+<br><br>
+<!--                <ul>-->
+<!--                   <li> The developer provides training to the customer's team on how to use-->
+<!--                       and manage the website or web application effectively.</li>-->
+<!--                   <li> Additionally, ongoing support and maintenance services are offered to-->
+<!--                       address any post-launch issues or updates</li>-->
+<!--                   <li> Scalability features ensure that the application can handle increased workload by-->
+<!--                       adding resources dynamically</li>-->
+<!--                   <li> Enterprise applications deal with sensitive data and require robust security measures.-->
+<!--                       Features like role-based access control, encryption, secure authentication, and data protection-->
+<!--                       are essential.</li>-->
+<!--                   <li> Clients are serviced by skilled and trained engineers.</li>-->
+
+<!--                </ul>-->
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">Cloud Based Access Control System</div>
+             Managed from a central location with zero down time and the system can scale with the needs of the
+                organization.<br><br>
+
+<!--                <ul>-->
+<!--                   <li> Detects issues and critical problems in advance.</li>-->
+<!--                   <li> Get advisory on replacement of spares or upgradation.</li>-->
+<!--                   <li> Reports are provided for any audit trails.</li>-->
+<!--                   <li> Improves overall system availability.</li>-->
+
+
+<!--                </ul>-->
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/cloud-based-access-control.jpg' %}" class="imag">
+             </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/Multi-factor_Authentication.png' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Multi Factor Authentication</div>
+                    Two-factor authentication offers advanced levels of physical security and is now a part of compliance
+                requirements for many critical infrastructures. With the emergence of multi-modal readers that support
+                key card, mobile,
+                pin pad, and biometrics all in one, there is increasing availability
+                of using two-factor authentication for wider deployments.
+                            <br><br>
+<!--                <ul>-->
+<!--                   <li> SOPS - Structured operating procedure, ensures standard way of addressing issues.</li>-->
+<!--                   <li> Each support ticket is monitored for FTR% and TAT%.</li>-->
+<!--                   <li> Periodic skill matrix assessment helps to identify gaps.</li>-->
+<!--                   <li> Standard checklists, Visit reports ensure systematic resolution to support tickets.</li>-->
+
+
+<!--                </ul>-->
+            </div>
+        </div>
+        <br><br>
+
+         <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">Biometric Technology</div>
+                Face recognition is being used for touchless access control, replacing
+                fingerprint access. A facial recognition access system provides the following:
+<br>
+<br>
+                <ul>
+                   <li>Multi Face Tracking</li>
+                   <li> Reduce need of Credentials.</li>
+                   <li> Embedded Anti Spoofing.</li>
+                   <li> GDPR Compliant.</li>
+                   <li> 2D and 3D checks for face recognitiony.</li>
+
+                </ul>
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/Biometric-Technologies.jpg' %}" class="imag">
+             </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/timebaesd.jpg' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Time And Attendance Monitoring</div>
+             Keeping a track of employee's attendance is vital to the efficiency of the business. Time
+                & Attendance software efficiently sets the time management discipline, report and record
+                keeping for enterprises.
+            <br>
+
+            Reports that can be generated with T & A Management Software are:
+<br><br>
+                <ul>
+                   <li> Attendance details</li>
+                   <li> Man hours / overtime</li>
+                   <li> Overtime summary</li>
+                   <li> Attendance muster</li>
+                   <li> Out duty details</li>
+                    <li> Attendance regularization report</li>
+
+                </ul>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">Integration With HRMS Systems</div>
+<!--             Managed from a central location with zero down time and the system can scale with the needs of the-->
+<!--                organization.<br><br>-->
+
+                <ul>
+                   <li> Bion provides integration with a HRMS system by using API, .CSV / .XLS or at DB Level.</li>
+                   <li> Importing Employee details Name, ID, etc, fields sync from HRMS to Software.</li>
+                   <li> Activation & Deactivation of employees sync is maintained.</li>
+                   <li> Consolidated attendance summary attendance, leave & tour details is available
+                       to employees on one dashboard.</li>
+                    <li> Final attendance summary is sent to ERP / HRMS systems for payroll processing.</li>
+
+
+                </ul>
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/aaa.jpeg' %}" class="imag">
+             </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/digital-transformaton.jpg' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Failover Or Redundancy Access Control Servers</div>
+                    Effective security and access control systems require uninterrupted operation. When physical
+                access control systems stop working, the entire operation is at risk. High availability solutions
+                are necessary to ensure these essential systems remain operational and provide uninterrupted coverage.
+                Bion offers high availability solutions that maintain high availability of physical access control
+                systems with a comprehensive redundancy or fail over access control servers.
+                            <br><br>
+<!--                <ul>-->
+<!--                   <li> SOPS - Structured operating procedure, ensures standard way of addressing issues.</li>-->
+<!--                   <li> Each support ticket is monitored for FTR% and TAT%.</li>-->
+<!--                   <li> Periodic skill matrix assessment helps to identify gaps.</li>-->
+<!--                   <li> Standard checklists, Visit reports ensure systematic resolution to support tickets.</li>-->
+
+
+<!--                </ul>-->
+            </div>
+        </div>
+        <br><br>
+
+
+
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<!--our aos-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+    {
+        offset:300,
+        duration:1500,
+    }
+    );
+  </script>
+
+
+
+{% endblock maincontent %}

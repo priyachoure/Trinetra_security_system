@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<style>
+     .joinus{
+        padding:10px;
+        background-color:black;
+    }
+    .container{
+        padding:20px;
+
+
+    }
+    .form_title{
+        text-align:center;
+        padding:20px;
+        font-size:40px;
+        font-weight:100;
+    }
+    .form{
+        background-color:#f1f1f1;
+    }
+    .career-info{
+        font-size:20px;
+        color:white;
+    }
+
+    .career_form{
+        padding:20px;
+<!--        border:1px solid gray;-->
+    }
+    .messages{
+         margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d4edda; /* Success message background color */
+    color: #155724; /* Success message text color */
+    }
+
+</style>
+
+<section class="career">
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <img src="{% static 'images/career.jpg' %}" class="career" style="width:1350px;">
+            </div>
+
+        </div>
+    </div>
+</section>
+<br>
+
+<section class="joinus">
+    <div class="container">
+        <p class="career-info">Join The <b>TRINETRA SECURITY SYSTEM</b> team and be part of a transformative journey.
+            Bring your ideas and passion to
+            drive change with us. We provide a dynamic environment where you can showcase and enhance your
+            skills. Let's collaborate to create meaningful value for our customers.</p>
+    </div>
+</section>
+<br><br>
+
+<section class="form">
+    <div class="form_title">
+        Be A Part Of Our Team
+    </div>
+    <br>
+
+    <div class="container">
+        {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+
+    <div class="container career_form">
+        <form method="post" action="{% url 'career_form' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Full Name</label>
+                    <input type="text" class="form-control" id="inputName" name="inputName" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="inputEmail" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="1234 Main St"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" name="inputAddress2"
+                       placeholder="Apartment, studio, or floor" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputphone">Phone</label>
+                    <input type="number" class="form-control" id="inputphone" name="inputphone" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPosition">Choose Position</label>
+                    <select id="inputPosition" class="form-control" name="inputPosition">
+                        <option selected>Choose...</option>
+                        <option value="projrct_engineer">Project Engineer</option>
+                        <option value="service_engineer">Service Engineer</option>
+                        <option value="web_developer">Web Developer</option>
+                        <option value="web_designner">Web Designer</option>
+                        <option value="Electrician">Electrician</option>
+                        <option value="App_Developer">App Developer</option>
+                        <option value="Digital_marketing">Digital Marketing</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputExperience">Year Of Experience</label>
+                    <input type="number" class="form-control" id="inputExperience" name="inputExperience" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <!--    <div class="form-check">-->
+                <!--      <input class="form-check-input" type="checkbox" id="gridCheck">-->
+                <!--      <label class="form-check-label" for="gridCheck">-->
+                <!--        Check me out-->
+                <!--      </label>-->
+                <!--    </div>-->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputattach">Attach File</label>
+                        <input type="file" class="form-control" id="inputattach" name="inputattach"  required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+<br>
+{% endblock maincontent %}

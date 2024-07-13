@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+    .aboutus{
+        width:100%;
+        height:500px;
+    }
+    .title_whowe{
+        text-transform:capitalize;
+        text-align:center;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+        color:white;
+    }
+    .whoweare{
+        background-color:black;
+    }
+    .info_whowe{
+        color:white;
+        font-size:20px;
+        padding:20px;
+    }
+    .imag{
+        width:500px;
+        height:500px;
+    }
+        .service_title{
+            color:#3119b5;
+            font-size:40px;
+            padding-top:40px;
+            padding-bottom:20px;
+        }
+    .maintance{
+        padding:80px;
+    }
+    .info_sericeve{
+        font-size:17px;
+        padding:20px;
+    }
+    .service_title{
+        text-transform:capitalize;
+    }
+</style>
+
+
+<section class="about_Us">
+    <div>
+        <img src="{% static 'images/integratated.jpg' %}" class="aboutus">
+    </div>
+</section>
+
+<section class="whoweare">
+    <div class="container ">
+        <div class="title_whowe">Integrated Security Solutions</div>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_whowe">
+
+                Providing Unique Enterprise Integrated Security Solutions that gives complete customized and innovative
+                solutions.Bion specializes in providing integrated security solutions
+                    <br><br>
+                                        Benefits of Integrated Security Solutions
+
+
+<!--             We carry out a detailed site survey and design a system as per National Fire Codes and Standards. Our Fire Alarm-->
+<!--                Systems are-->
+<!--                equipped with advanced design parameters such as interfacing with other systems and future scalability needs.-->
+                <br><br>
+                    <ul>
+                           <li> Increased Efficiency - Manage all security systems, monitor, and respond all security incidents on the same platform</li>
+                           <li> Reduced operating costs - Unified Security platform reduces your cost of managing operations</li>
+                           <li> GDPR Compliance - Products used in the integration comply with GDPR compliance.</li>
+                           <li> Scalability - Upgrade more systems/ devices to existing unified platform at any given point in time</li>
+                    </ul>
+
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1">
+                <img src="{% static 'images/integrated_solution_intro.jpg' %}" class="imag">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<section class="maintance">
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">
+                <div class="service_title" data-aos="fade-up">CyberSecurity And Network Protection</div>
+
+              Stored data is secured and protected from unauthorized access. Multilevel authority
+                is used for right access. You can also track any malicious activity by an employee.
+
+<!--            Any of the products available in the Industry are Scalable, Networkable, can be centrally monitored,-->
+<!--                and now IoT Driven as well.-->
+<br>
+<br>
+<!--                <ul>-->
+<!--                   <li>We offer End to End Video Surveillance Solution.</li>-->
+<!--                   <li> Our complete, high-definition surveillance solutions can help protect-->
+<!--                       critical assets and ensure public safety by delivering exceptional image detail-->
+<!--                       and powerful system control.</li>-->
+<!--                   <li> Decreased false alarms.</li>-->
+<!--                   <li> The System is monitored round the clock and storing data for investigation purposes. Quick and easy review-->
+<!--                       footage of an event and zoom in to analyze detailed regions of interest to improve the quality and-->
+<!--                       speed of investigations.</li>-->
+<!--                   <li> Fewer cameras to achieve greater coverage, reducing installation,-->
+<!--                       maintenance, and replacement costs.</li>-->
+<!--                         <li> Reduced investigation time due to powerful search tools.</li>-->
+<!--                   <li>Cyber secure.</li>-->
+
+<!--                </ul>-->
+            </div>
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">
+                <img src="{% static 'images/networking.jpg' %}" class="imag">
+             </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+
+             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">
+                <img src="{% static 'images/thermal_temperature-screening.jpg' %}" class="imag">
+             </div>
+            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">
+                <div class="service_title" data-aos="fade-up">Thermal Temperature Face Recognition With Temperature Screening</div>
+<!--             Water leak is one of the major causes of downtime in data centres. Presence of water can mean damage-->
+<!--                to equipment or loss of critical services. WLD System detects water leakage problem & notification-->
+<!--                is obtained over alarm.-->
+<!---->
+                <ul>
+                   <li> Thermal Camera helps organizations control entry.</li>
+                   <li>It provides face authentication & temperature.</li>
+                   <li> The smart visible camera is used to detect faces automatically with its embedded Facial Detection engine.</li>
+                   <li> Prevents the entry of a person that has an elevated temperature.</li>
+                   <li> Using advanced facial detection technology enables operators to see a high forehead skin temperature.</li>
+                    <li> The thermal detector will immediately detect the temperature in the target area and provide the information
+                        to the visible camera with a temperature value.</li>
+<!--                   <li> Items Left Behind</li>-->
+<!--                   <li> Objects Abandoned or Removed or % removed</li>-->
+
+                </ul>
+            </div>
+        </div>
+        <br><br>
+
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">-->
+<!--                <div class="service_title" data-aos="fade-up">Rodent Repellent System</div>-->
+<!--             Rodent Repellent System is a system which helps in keeping the rodent away from the protected area with-->
+<!--                high frequency-->
+<!--                Ultrasonic Sounds. The master controller and transducers are installed above and below false ceiling-->
+<!--                & below false flooring.<br><br>-->
+
+<!--&lt;!&ndash;                <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Multi Face Tracking.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Reduce Need of Credentials.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> No delay</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> No Bottle necks</li>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--            </div>-->
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">-->
+<!--                <img src="{% static 'images/gas3.jpg' %}" class="imag">-->
+<!--             </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--        <div class="row">-->
+
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">-->
+<!--                <img src="{% static 'images/gas4.jpg' %}" class="imag">-->
+<!--             </div>-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">-->
+<!--                <div class="service_title" data-aos="fade-up">Aspiration System</div>-->
+<!--                    Aspirating smoke detection air sampling technology system provides-->
+<!--                early warning of a fire condition for the action and control that can be implemented-->
+<!--                prior to serious damage.-->
+<!--                            <br><br>-->
+<!--&lt;!&ndash;                <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> SOPS - Structured operating procedure, ensures standard way of addressing issues.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Each support ticket is monitored for FTR% and TAT%.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Periodic skill matrix assessment helps to identify gaps.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Standard checklists, Visit reports ensure systematic resolution to support tickets.</li>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--         <div class="row">-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">-->
+<!--                <div class="service_title" data-aos="fade-up">Biometric Technology</div>-->
+<!--                Face recognition is being used for touchless access control, replacing-->
+<!--                fingerprint access. A facial recognition access system provides the following:-->
+<!--<br>-->
+<!--<br>-->
+<!--                <ul>-->
+<!--                   <li>Multi Face Tracking</li>-->
+<!--                   <li> Reduce need of Credentials.</li>-->
+<!--                   <li> Embedded Anti Spoofing.</li>-->
+<!--                   <li> GDPR Compliant.</li>-->
+<!--                   <li> 2D and 3D checks for face recognitiony.</li>-->
+
+<!--                </ul>-->
+<!--            </div>-->
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">-->
+<!--                <img src="{% static 'images/Biometric-Technologies.jpg' %}" class="imag">-->
+<!--             </div>-->
+<!--        </div>-->
+
+<!--        <br><br>-->
+<!--        <div class="row">-->
+
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">-->
+<!--                <img src="{% static 'images/timebaesd.jpg' %}" class="imag">-->
+<!--             </div>-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">-->
+<!--                <div class="service_title" data-aos="fade-up">Time And Attendance Monitoring</div>-->
+<!--             Keeping a track of employee's attendance is vital to the efficiency of the business. Time-->
+<!--                & Attendance software efficiently sets the time management discipline, report and record-->
+<!--                keeping for enterprises.-->
+<!--            <br>-->
+
+<!--            Reports that can be generated with T & A Management Software are:-->
+<!--<br><br>-->
+<!--                <ul>-->
+<!--                   <li> Attendance details</li>-->
+<!--                   <li> Man hours / overtime</li>-->
+<!--                   <li> Overtime summary</li>-->
+<!--                   <li> Attendance muster</li>-->
+<!--                   <li> Out duty details</li>-->
+<!--                    <li> Attendance regularization report</li>-->
+
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve">-->
+<!--                <div class="service_title" data-aos="fade-up">Integration With HRMS Systems</div>-->
+<!--&lt;!&ndash;             Managed from a central location with zero down time and the system can scale with the needs of the&ndash;&gt;-->
+<!--&lt;!&ndash;                organization.<br><br>&ndash;&gt;-->
+
+<!--                <ul>-->
+<!--                   <li> Bion provides integration with a HRMS system by using API, .CSV / .XLS or at DB Level.</li>-->
+<!--                   <li> Importing Employee details Name, ID, etc, fields sync from HRMS to Software.</li>-->
+<!--                   <li> Activation & Deactivation of employees sync is maintained.</li>-->
+<!--                   <li> Consolidated attendance summary attendance, leave & tour details is available-->
+<!--                       to employees on one dashboard.</li>-->
+<!--                    <li> Final attendance summary is sent to ERP / HRMS systems for payroll processing.</li>-->
+
+
+<!--                </ul>-->
+<!--            </div>-->
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-left">-->
+<!--                <img src="{% static 'images/aaa.jpeg' %}" class="imag">-->
+<!--             </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--        <div class="row">-->
+
+<!--             <div class="col-lg-5 col-md-2 col-sm-1" data-aos="fade-right">-->
+<!--                <img src="{% static 'images/digital-transformaton.jpg' %}" class="imag">-->
+<!--             </div>-->
+<!--            <div class="col-lg-6 col-md-2 col-sm-1 info_sericeve" style="margin-left:80px;">-->
+<!--                <div class="service_title" data-aos="fade-up">Failover Or Redundancy Access Control Servers</div>-->
+<!--                    Effective security and access control systems require uninterrupted operation. When physical-->
+<!--                access control systems stop working, the entire operation is at risk. High availability solutions-->
+<!--                are necessary to ensure these essential systems remain operational and provide uninterrupted coverage.-->
+<!--                Bion offers high availability solutions that maintain high availability of physical access control-->
+<!--                systems with a comprehensive redundancy or fail over access control servers.-->
+<!--                            <br><br>-->
+<!--&lt;!&ndash;                <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> SOPS - Structured operating procedure, ensures standard way of addressing issues.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Each support ticket is monitored for FTR% and TAT%.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Periodic skill matrix assessment helps to identify gaps.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                   <li> Standard checklists, Visit reports ensure systematic resolution to support tickets.</li>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                </ul>&ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+
+
+    </div>
+    <br>
+    <br>
+
+</section>
+
+<!--our aos-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+    {
+        offset:300,
+        duration:1500,
+    }
+    );
+  </script>
+
+
+
+{% endblock maincontent %}

@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+
+<style>
+    .joinus{
+        padding:10px;
+        background-color:black;
+    }
+    .container{
+        padding:20px;
+
+
+    }
+
+    .career-info{
+        font-size:20px;
+        color:white;
+    }
+    .job_opportunity_title{
+        text-align:center;
+        font-size:30px;
+        text-transform:Capitalize;
+    }
+    .posts{
+
+        padding:50px;
+        justify-content:center;
+
+
+    }
+    .posting-job{
+
+        border-radius:15px;
+        background-color: #f1f1f1;
+
+<!--        gap:15px;-->
+    }
+    .job-heading{
+        color:blue;
+        font-size:20px;
+        padding:10px;
+    }
+
+    .job_desc{
+        text-align:left;
+        padding:10px;
+        font-size:15px;
+    }
+
+    .btn{
+        background-image:linear-gradient(to bottom right,rgb(253, 113, 78),rgb(39, 27, 206));
+        padding:10px 20px;
+        margin:10px;
+        text-weight:200;
+        font-size:15px;
+        color:white;
+<!--        position:absolute;-->
+    }
+    .btn:hover{
+        color:white;
+    }
+
+</style>
+
+
+
+<section class="career">
+<div class="container-fluid">
+    <div class="row">
+        <div>
+            <img src="{% static 'images/career.jpg' %}" class="career" style="width:1350px;">
+        </div>
+
+    </div>
+</div>
+</section>
+<br>
+
+<section class="joinus">
+    <div  class="container" >
+        <p class="career-info">Join The <b>TRINETRA SECURITY SYSTEM</b> team and be part of a transformative journey.
+            Bring your ideas and passion to
+        drive change with us. We provide a dynamic environment where you can showcase and enhance your
+        skills. Let's collaborate to create meaningful value for our customers.</p>
+    </div>
+</section>
+
+<section class="posts">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-3  job_opportunity_title">
+                    Job opportunities
+                </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-lg-3 col-md-2 col-sm-1  posting-job">
+                <div class="job-heading">Project Engineer</div>
+
+                    <div class="job_desc">Dip./BE/B Tech (Electrical, ECE, Mech) with 2-6 years
+                    of experience in managing projects in Security Systems Integration.
+                        (FA, PA, CCTV, Access Control, Sprinkler, Networking)</div>
+
+                    <a href="{% url 'career_form' %}"><button class="btn">Apply</button></a>
+            </div>
+
+            <div class="offset-1 col-lg-3 col-md-2 col-sm-1 posting-job">
+                <div class="job-heading">Service Engineer</div>
+
+                    <div class="job_desc">Dip./BE/BTech (Electrical, Mech, CS) with 1-6 years
+                        of experience in Security Systems Integration, CCTV Solution, Video Surveillance,
+                        Access Control, and other physical Security Surveillance systems.</div>
+
+                    <a href="{% url 'career_form' %}"><button class="btn">Apply</button></a>
+
+            </div>
+
+            <div class="offset-1 col-lg-3 col-md-2 col-sm-1 posting-job">
+                <div class="job-heading">Electrician</div>
+
+                    <div class="job_desc">10th/ITI/Dip./BE/B Tech (Electrical, ECE) with 1-6 years
+                    of experience in managing projects in Security Systems Integration.
+                        </div>
+
+                    <a href="{% url 'career_form' %}"><button class="btn">Apply</button></a>
+
+            </div>
+
+        </div>
+        <br><br>
+        <div class="row">
+            <div class=" col-lg-3 col-md-2 col-sm-1  posting-job">
+                <div class="job-heading">Web Designer</div>
+
+                    <div class="job_desc">Dip./BE/B Tech (Electrical, ECE,CS ,IT, Mech) with 1-6 years
+                    of experience in Frontend Languages & Framework like HTML, CSS, JavaScript, Angular, React.
+                    In addition good to have skillset like Photoshop, graphic design etc.</div>
+
+                    <a href="{% url 'career_form' %}"><button class="btn">Apply</button></a>
+            </div>
+
+            <div class="offset-1 col-lg-3 col-md-2 col-sm-1 posting-job">
+                <div class="job-heading">Web Developer</div>
+
+                    <div class="job_desc">Dip./BE/BTech (Electrical, Mech, ENTC,CS ,IT,) with 1-6 years
+                        of experience in Backend languages like Python , Java, PHP, .net, nodeJS etc</div>
+
+                    <a href="{% url 'career_form' %}"><button class="btn">Apply</button></a>
+
+            </div>
+
+<!--            <div class="offset-1 col-lg-3 col-md-2 col-sm-1 posting-job">-->
+<!--                <div class="job-heading">Electrician</div>-->
+
+<!--                    <div class="job_desc">10th/ITI/Dip./BE/B Tech (Electrical, ECE) with 1-6 years-->
+<!--                    of experience in managing projects in Security Systems Integration.-->
+<!--                        </div>-->
+
+<!--                    <a href="#"><button class="btn">Apply</button></a>-->
+
+<!--            </div>-->
+
+        </div>
+
+
+    </div>
+
+</section>
+
+{% endblock maincontent %}

@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block maincontent %}
+<style>
+    .contact_us{
+        width:100%;
+        height:500px;
+    }
+    .getintouch{
+        background-color:#f1f1f1;
+    }
+    .info_getIn{
+        text-align:center;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+
+    }
+    .email_conatact{
+        font-size:15px;
+        font-weight:bold;
+        color:white;
+    }
+    .all-info{
+        background-color:black;
+        color:white;
+        padding:10px;
+        text-align:center;
+    }
+    .connect_us{
+    background-color:#f1f1f1;
+    }
+    .connect_title{
+        text-align:center;
+        font-size:30px;
+        font-weight: bold;
+        padding:50px;
+
+    }
+    i{
+        font-size:30px;
+        padding: 0px 10px;
+        cursor:pointer;
+
+    }
+    .icon-container{
+        display:flex;
+        justify-content: center;
+        justify-content: center;
+        gap:10px;
+    }
+    .map {
+            padding:20px;
+  }
+  .whole_map{
+    width:150%;
+<!--    position: fixed;-->
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding:20px;
+  }
+
+</style>
+
+<section class="contactUs">
+    <div>
+        <img src="{% static 'images/contact-us1.png' %}" class="contact_us">
+    </div>
+</section>
+
+<section class="getintouch">
+
+    <div class="info_getIn">Get In Touch </div>
+
+    <div class="container all-info">
+           <div ><span class="email_conatact">Email:</span>
+               <div> trinetrasecuritysytem60@gmail.com</div>
+           </div>
+        <br>
+            <div><span class="email_conatact">Our Office</span>
+                <div>286/2, Keshav Nagar,
+                        Near Marathi School,
+                        Chinchwad, Pune-411033
+                </div>
+            </div><br>
+
+            <div><span class="email_conatact">Phone:</span>
+                <div>+91 7350525194</div>
+            </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+</section>
+
+<section class="connect_us">
+    <div class="connect_title">
+        Connect Us:
+    </div>
+    <div class="icon-container">
+        <div class="social_midea">
+            <a href="#"><i class='fab fa-facebook' style='color:blue;' ></i></a>
+            <a href="#"><i class='fab fa-instagram' style='color:red;'></i></a>
+            <a href="#"><i class='fab fa-twitter' style='color:blue;'></i></a>
+            <a href="https://www.youtube.com/@blossoming_art1233"><i class='fab fa-youtube' style='color:red;'></i></a>
+        </div>
+    </div>
+    <br>
+    <br>
+</section>
+
+<section class="map">
+
+    <div class="container whole_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15122.534208459985!2d73.7774465332297!3d18.635545010006474!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9aedd2fffff%3A0xeb0a534c60020d3c!2sTrinetra%20Security%20System!5e0!3m2!1sen!2sin!4v1711793762169!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+</section>
+
+{% endblock maincontent %}

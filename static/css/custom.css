@@ -1,0 +1,55 @@
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item.active .nav-link:hover,
+.navbar-nav .nav-item:hover .nav-link {
+    font-size: 20px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    padding:15px;
+}
+.navbar-nav .nav-item .nav-link {
+    font-size:15px;
+    font-weight: bold;
+    padding:15px;
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom right, rgb(39, 27, 206),rgb(253, 113, 78) );
+}
+
+.nav_logo{
+     width: 55px; /* Set the desired width for the image */
+     height: Auto; /* Automatically adjust height to maintain aspect ratio */
+     margin-left:50px;
+
+}
+
+.carouselExampleSlidesOnly {
+    width: 100%; /* Set the width of the carousel */
+     height: 50px; !important; /* Set the height of the carousel */
+}
+
+.carousel-item img {
+    width: 50%; /* Set the width of the images within the carousel */
+    height: 550px; !important;/* Set the height of the images to fill the carousel */
+    object-fit: cover; /* Ensure the images cover the entire carousel item */
+}
+
+.btn{
+
+
+            padding: 10px;
+            background: linear-gradient(to bottom right, rgb(253, 113, 78), rgb(39, 27, 206));
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+
+}
+
+.card{
+ transition:all 0.3s;
+}
+.card:hover{
+    transform:scale{1.15)
+}
+}
+
